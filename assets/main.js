@@ -49,7 +49,7 @@ for (let i = 1; i < 101; i++) {
     else {
         console.log('no');
     }
-
+}
 
 /*     if (i === multiple3) {
         console.log('Fizz');
@@ -57,4 +57,3 @@ for (let i = 1; i < 101; i++) {
     else {
         console.log('non è multiplo');
     } */
-}
