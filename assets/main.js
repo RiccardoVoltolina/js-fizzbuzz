@@ -41,9 +41,8 @@ console.log(multiplesOf);
  */
 
 for (let i = 1; i < 101; i++) {
-    let multiple3 = i * 3
-    console.log(multiple3);
-    if (i === multiple3) {
+    let multiples3 = i * 3
+    if ((i - multiples3) === 0) {
         console.log('Fizz');
     }
     else {
@@ -57,3 +56,11 @@ for (let i = 1; i < 101; i++) {
     else {
         console.log('non è multiplo');
     } */
+
+
+//x and y are both integers
+/* let remainder = x % y;
+/*  *//* if (remainder == 0){ */
+ ///x is a multiple of y
+/* } else { */
+//x is not a multiple of y
