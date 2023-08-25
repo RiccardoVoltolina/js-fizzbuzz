@@ -40,6 +40,8 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 console.log(multiplesOf); 
  */
 
+let element = document.getElementById ('multiple_3')
+
 for (let i = 1; i < 101; i++) {
     let multiple3 = i % 3;
     let multiple5 = i % 5
@@ -53,4 +55,8 @@ for (let i = 1; i < 101; i++) {
     else {
         console.log(i);
     }
+    
+    const divElement = document.createElement ('div')
+    divElement.append (multiple3 == 0)
+    element.append(divElement)
 }
