@@ -26,10 +26,10 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 /* creo all' interno del for degli if/ else */
 
 
-/* function multiplesOf(numbers, number) { // add second argument
-  var multiples = []; // change to array (so that we can store multiple numbers - not just one multiple)
-  for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] % number === 0) { // divide by the number
+/* function multiplesOf(numbers) { // add second argument
+  let multiples = [3, 5]; // change to array (so that we can store multiple numbers - not just one multiple)
+  for (let i = 1; i < 100; i++) {
+    if (i % numbers === 0) { // divide by the number
       multiples.push(numbers[i]); // add the current multiple found to the multiples array
     }
   }
@@ -37,17 +37,24 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
   return multiples;
 }
 
-console.log(multiplesOf([4, 5, 6, 7, 8], 2)); // Output: [4, 6, 8]
+console.log(multiplesOf); 
  */
 
 for (let i = 1; i < 101; i++) {
-    console.log(i);
     let multiple3 = i * 3
-
+    console.log(multiple3);
     if (i === multiple3) {
         console.log('Fizz');
     }
     else {
-        console.log('non è multiplo');
+        console.log('no');
     }
+
+
+/*     if (i === multiple3) {
+        console.log('Fizz');
+    }
+    else {
+        console.log('non è multiplo');
+    } */
 }
