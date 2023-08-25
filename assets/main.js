@@ -41,26 +41,13 @@ console.log(multiplesOf);
  */
 
 for (let i = 1; i < 101; i++) {
-    let remainder = i % 3;
-    if (remainder == 0) {
+    let multiple3 = i % 3;
+    let multiple5 = i % 5
+    if (multiple3 == 0) {
         console.log('Fizz');
-    }
-    else {
-        console.log('no');
+    } else if (multiple5 == 0) {
+        console.log('Buzz');
+    } else {
+        console.log(i);
     }
 }
-
-/*     if (i === multiple3) {
-        console.log('Fizz');
-    }
-    else {
-        console.log('non è multiplo');
-    } */
-
-
-//x and y are both integers
-/* let remainder = x % y;
-/*  *//* if (remainder == 0){ */
- ///x is a multiple of y
-/* } else { */
-//x is not a multiple of y
