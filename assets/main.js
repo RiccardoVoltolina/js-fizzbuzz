@@ -51,12 +51,14 @@ for (let i = 1; i < 101; i++) {
         console.log('Buzz');
     } else if (multiple3 == 0) {
         console.log('Fizz');
+        const divElement = document.createElement ('div')
+        divElement.append ('Fizz')
+        element.append(divElement)
+
     }
     else {
         console.log(i);
     }
     
-    const divElement = document.createElement ('div')
-    divElement.append (multiple3 == 0)
-    element.append(divElement)
+    
 }
