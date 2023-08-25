@@ -42,4 +42,12 @@ console.log(multiplesOf([4, 5, 6, 7, 8], 2)); // Output: [4, 6, 8]
 
 for (let i = 1; i < 101; i++) {
     console.log(i);
+    let multiple3 = i * 3
+
+    if (i === multiple3) {
+        console.log('Fizz');
+    }
+    else {
+        console.log('non è multiplo');
+    }
 }
