@@ -45,20 +45,34 @@ let element = document.getElementById ('multiple_3')
 for (let i = 1; i < 101; i++) {
     let multiple3 = i % 3;
     let multiple5 = i % 5
+
+    const divElement = document.createElement ('li')
+
     if ((multiple5 == 0) && (multiple3 == 0)) {
         console.log('FizzBuzz');
+
+        
+        divElement.append ('FizzBuzz')
+        
     } else if (multiple5 == 0) {
         console.log('Buzz');
+
+    
+        divElement.append ('Buzz');
+    
+
     } else if (multiple3 == 0) {
         console.log('Fizz');
-        const divElement = document.createElement ('div')
+        
         divElement.append ('Fizz')
-        element.append(divElement)
+        
 
     }
     else {
         console.log(i);
+
+        divElement.append (i)
     }
     
-    
+    element.append(divElement)
 }
