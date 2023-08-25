@@ -41,8 +41,8 @@ console.log(multiplesOf);
  */
 
 for (let i = 1; i < 101; i++) {
-    let multiples3 = i * 3
-    if ((i - multiples3) === 0) {
+    let remainder = i % 3;
+    if (remainder == 0) {
         console.log('Fizz');
     }
     else {
