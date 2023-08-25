@@ -43,11 +43,14 @@ console.log(multiplesOf);
 for (let i = 1; i < 101; i++) {
     let multiple3 = i % 3;
     let multiple5 = i % 5
-    if (multiple3 == 0) {
-        console.log('Fizz');
+    if ((multiple5 == 0) && (multiple3 == 0)) {
+        console.log('FizzBuzz');
     } else if (multiple5 == 0) {
         console.log('Buzz');
-    } else {
+    } else if (multiple3 == 0) {
+        console.log('Fizz');
+    }
+    else {
         console.log(i);
     }
 }
