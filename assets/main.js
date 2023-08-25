@@ -40,7 +40,7 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 console.log(multiplesOf); 
  */
 
-let element = document.getElementById ('multiple_3')
+let element = document.getElementById ('multiple')
 
 for (let i = 1; i < 101; i++) {
     let multiple3 = i % 3;
@@ -50,21 +50,20 @@ for (let i = 1; i < 101; i++) {
 
     if ((multiple5 == 0) && (multiple3 == 0)) {
         console.log('FizzBuzz');
-
-        
         divElement.append ('FizzBuzz')
-        
+        divElement.style.color = 'red'
+       
     } else if (multiple5 == 0) {
         console.log('Buzz');
-
-    
         divElement.append ('Buzz');
+        divElement.style.color = 'purple'
     
 
     } else if (multiple3 == 0) {
         console.log('Fizz');
         
         divElement.append ('Fizz')
+        divElement.style.color = 'green'
         
 
     }
@@ -72,7 +71,10 @@ for (let i = 1; i < 101; i++) {
         console.log(i);
 
         divElement.append (i)
+        divElement.style.color = 'gray'
     }
     
     element.append(divElement)
+
+ 
 }
